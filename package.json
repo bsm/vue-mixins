@@ -1,0 +1,38 @@
+{
+  "name": "bsm-vue-mixins",
+  "version": "0.1.0",
+  "description": "Form mixin for Vue projects",
+  "repository": "https://github.com/bsm/vue-mixins.git",
+  "author": "Dimitrij Denissenko",
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "lint": "eslint 'src/**/*.{ts,js}'",
+    "prettify": "prettier --write --config prettier.config.js 'src/**/*.{ts,js}'",
+    "build": "tsc -p .",
+    "test": "jest",
+    "prepare": "$_ run build",
+    "prepublishOnly": "$_ run lint & $_ run test",
+    "preversion": "$_ run lint",
+    "version": "$_ run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/node": "*",
+    "@types/prettier": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.25.0",
+    "@typescript-eslint/parser": "^2.25.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "jest": "^25.1.0",
+    "prettier": "*",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3",
+    "vue": "^2.6.11"
+  }
+}
