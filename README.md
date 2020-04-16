@@ -36,7 +36,7 @@ import { FormMixin } from 'bsm-vue-mixins';
 export default {
   mixins: [FormMixin],
   data: () => ({
-    formContext: 'Users',
+    formContext: 'User',
   }),
   methods: {
     // On-save callback.

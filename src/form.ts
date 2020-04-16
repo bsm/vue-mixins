@@ -16,7 +16,6 @@ export const FormMixin = Vue.extend({
   },
   data: () => ({
     item: undefined,
-    formContext: 'Item',
   }),
   created(): void {
     this.formReset();
@@ -62,6 +61,9 @@ export const FormMixin = Vue.extend({
     formReady(): void {},
   },
   computed: {
+    formContext(): string {
+      return 'Item';
+    },
     formTitle(): string {
       return this.editing == null ? `New ${this.formContext}` : `Edit ${this.formContext}`;
     },
