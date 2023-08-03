@@ -719,8 +719,8 @@ packages:
     hasBin: true
     dev: true
 
-  /ajv@6.12.0:
-    resolution: {integrity: sha512-D6gFiFA0RRLyUbvijN74DWAjXSFxWKaWP7mldxkVhyhAV3+SWA9HEJPHQ2c9soIeTFJqcSdFDGFgdqs1iUU2Hw==}
+  /ajv@6.12.6:
+    resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
     dependencies:
       fast-deep-equal: 3.1.1
       fast-json-stable-stringify: 2.1.0
@@ -1376,7 +1376,7 @@ packages:
     hasBin: true
     dependencies:
       '@babel/code-frame': 7.8.3
-      ajv: 6.12.0
+      ajv: 6.12.6
       chalk: 2.4.2
       cross-spawn: 6.0.5
       debug: 4.1.1
@@ -1774,7 +1774,7 @@ packages:
     resolution: {integrity: sha512-sNvOCzEQNr/qrvJgc3UG/kD4QtlHycrzwS+6mfTrrSq97BvaYcPZZI1ZSqGSPR73Cxn4LKTD4PttRwfU7jWq5g==}
     engines: {node: '>=6'}
     dependencies:
-      ajv: 6.12.0
+      ajv: 6.12.6
       har-schema: 2.0.0
     dev: true
 
@@ -3603,7 +3603,7 @@ packages:
     resolution: {integrity: sha512-wmEc8m4fjnob4gt5riFRtTu/6+4rSe12TpAELNSqHMfF3IqnA+CH37USM6/YR3qRZv7e56kAEAtd6nKZaxe0Ug==}
     engines: {node: '>=6.0.0'}
     dependencies:
-      ajv: 6.12.0
+      ajv: 6.12.6
       lodash: 4.17.15
       slice-ansi: 2.1.0
       string-width: 3.1.0
